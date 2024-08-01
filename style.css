@@ -1,0 +1,138 @@
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    position: relative;
+
+}
+
+
+.news-div {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px 20px;
+}
+
+nav {
+    background-color: rgb(4, 4, 4);
+    box-shadow: 20px 40px 24px rgba(61, 60, 60, 0.3);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+}
+
+
+.navbar .News-logo {
+    color: rgb(241, 241, 241);
+    text-decoration: none;
+    letter-spacing: 2px;
+    font-size: 2.4rem;
+    font-weight: 700;
+    border-bottom: 4px solid rgb(147, 206, 147);
+    padding-bottom: 4px;
+    
+}
+
+.search-container {
+    display: flex; 
+}
+
+#search-input {
+    padding: 12px;
+    border-radius: 15px;
+    font-size: 20px;
+    color: #4f4c9d;
+}
+
+#search-button {
+    padding: 10px 20px;
+    background-color: #3c44d6;
+    border-radius: 50px;
+    color: #fff;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+#search-button:hover{
+    background-color: #6dd38a;
+    color: black;
+    border: 2px solid black;
+    transform: scale(1.1);
+}
+
+
+
+
+#blog-container {
+    padding: 2rem 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.blog-card {
+    /* flex: 0 1 calc(33.333% - 20px); */
+    max-width: 400px; 
+    border: 2px solid #0f1010;
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 1rem;
+    margin: 20px;
+
+}
+
+.blog-card:hover {
+    box-shadow: 10px 20px 10px rgba(0, 0, 0, 0.1);
+    transform: scale(1.1);
+}
+
+.blog-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+}
+
+.blog-card h2 {
+    color: #141414;
+    font-size: 1.6rem; 
+    font-weight: 500;
+}
+
+.blog-card p {
+    font-size: 1rem; 
+    line-height: 1.4;
+}
+
+@media (max-width: 768px) {
+    .navbar .News-logo {
+        font-size: 1.5rem; 
+    }
+
+    #search-input {
+        padding: 10px; 
+    }
+
+    .blog-card {
+        flex-basis: calc(50% - 20px); 
+    }
+}
+
+@media (max-width: 500px) {
+    .blog-card {
+        flex-basis: calc(100% - 20px); 
+    }
+}
